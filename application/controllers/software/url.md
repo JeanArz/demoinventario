@@ -1,0 +1,5 @@
+'/software', 'application.controllers.software.index.Index',
+'/software/view/(.+)', 'application.controllers.software.view.View',
+'/software/edit/(.+)', 'application.controllers.software.edit.Edit',
+'/software/delete/(.+)', 'application.controllers.software.delete.Delete',
+'/software/insert', 'application.controllers.software.insert.Insert',

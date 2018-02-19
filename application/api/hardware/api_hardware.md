@@ -1,0 +1,1 @@
+'/api_hardware/?', 'application.api.hardware.api_hardware.Api_hardware',

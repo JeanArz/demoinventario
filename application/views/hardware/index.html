@@ -1,0 +1,21 @@
+$def with(hardware)
+<h3>
+    <a href="/hardware">hardware</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>hardware</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        $for item in hardware:
+        <tr>
+            <td><a href='/hardware/view/$item.id_hardware'>$item.modelo</a></td>
+            <td><a href='/hardware/edit/$item.id_hardware'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/hardware/delete/$item.id_hardware'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

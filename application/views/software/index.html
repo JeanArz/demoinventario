@@ -1,0 +1,21 @@
+$def with(software)
+<h3>
+    <a href="/software">software</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>software</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        $for item in software:
+        <tr>
+            <td><a href='/software/view/$item.id_software'>$item.nombre</a></td>
+            <td><a href='/software/edit/$item.id_software'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/software/delete/$item.id_software'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

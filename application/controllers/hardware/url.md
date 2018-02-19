@@ -1,0 +1,5 @@
+'/hardware', 'application.controllers.hardware.index.Index',
+'/hardware/view/(.+)', 'application.controllers.hardware.view.View',
+'/hardware/edit/(.+)', 'application.controllers.hardware.edit.Edit',
+'/hardware/delete/(.+)', 'application.controllers.hardware.delete.Delete',
+'/hardware/insert', 'application.controllers.hardware.insert.Insert',
